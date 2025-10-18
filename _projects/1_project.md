@@ -2,87 +2,97 @@
 layout: page
 title: project 1
 description: Pietro San
-img: assets/img/12.jpg
+img: assets/img/progetto_1_presentazione.png
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-
-Pietro san è un progetto che usa droni di fascia consumer, legalmente utilizzabili da tutti, per fare survey delle aree cittadine e mappare così la distribuzione dei rifiuti nelle aree urbane.
-Lo scopo è quello in primo luogo di sensibilizzare verso l'argomento rifiuti e plastica, con la quale ormai viviamo in simbiosi, ma anche quello di trattare il problema da un punto di vista quantitativo e più high tech come è adeguato per il passo dei tempi. La sempre maggiore automazione permetterà di avere dati periodici, ad impatto zero e disponibili aq tutti i cittadini, e permetterà invece alle autorità competenti di agire in maniera mirata dove si nota una maggior velocità di riaccumulo dei rifiuti. 
-
-Infine prevediamo di accoppiare Pietro San con un robot terrestre, che possa utilizzare tali informazioni per definire percorsi e andare a raccogliere lo sporco in regioni più difficili da raggiungere, e tutto in maniera automatizzata.
-
-Il nomederiva in primo luogo dal detto italiano: "Pietro torna indietro", che significa Pietro comes back, e noi vogliamo ovviamente che Pietro San torni sempre indietro. è poi però anche un nome importante nella famiglia di alcuni membri del gruppo, dove il nome Pietro e Carlo si tramanda e si alterna di generazione in generazione, facendo di Pietro come un figlio. Infine è ovviamente un richiamo a San Pietro e alla sua storia di pescatore, quando ancora non conosceva Gesù. Lui pescava pesci, mentre noi, in futuro, prevediamo di pescare plastica.
-
+Pietro San is a project that uses consumer-grade drones — legally operable by anyone — to survey urban areas and map the distribution of litter in cities. Its goal is to raise awareness about the growing issue of waste and plastic, which have become part of our daily environment, while also addressing the problem through a quantitative and technologically driven approach. By leveraging automation, the project aims to provide regular, zero-impact data accessible to all citizens, enabling authorities to take targeted action where waste accumulation occurs most rapidly.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/drone_alone.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid 
+      loading="eager" 
+      path="assets/img/yolo_1.jpg" 
+      title="Drone view" 
+      class="img-fluid rounded z-depth-1" 
+    %}
+  </div>
 
   <div class="col-sm mt-3 mt-md-0">
-    <video 
+    {% include figure.liquid 
+      loading="eager" 
+      path="assets/img/yolo_2.jpg" 
+      title="YOLO detection 1" 
       class="img-fluid rounded z-depth-1" 
-      controls 
-      autoplay 
-      muted 
-      loop 
-      playsinline 
-      preload="auto"
-    >
-      <source src="assets/videos/video-drone-per-sito.mp4" type="video/mp4">
-      Il tuo browser non supporta i video HTML5.
-    </video>
+    %}
+  </div>
+
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid 
+      loading="eager" 
+      path="assets/img/yolo_3.jpg" 
+      title="YOLO detection 3" 
+      class="img-fluid rounded z-depth-1" 
+    %}
+  </div>
+</div>
+<div class="caption">
+  Examples of drone images analyzed by the AI, with green boxes highlighting the objects identified as litter.
+</div>
+
+The detected waste is highlighted in green by the AI once the image has been processed. These sample images already demonstrate the effectiveness of the approach, though the wide variety of shapes and colors of litter means that a long phase of performance refinement still lies ahead.
+
+<style>
+/* contenitore full-width dentro il body del tema (rispetta i padding del tema) */
+.img-row {
+  display: flex;
+  gap: 12px;             /* spazio fra le immagini */
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ogni colonna occupa metà larghezza */
+.img-row .col {
+  flex: 1 1 0;
+}
+
+/* qui imposti L'ALTEZZA fissa: cambia 380px con il valore che preferisci */
+.img-row img {
+  display: block;
+  width: 100%;
+  height: 500px;         /* altezza fissa identica per entrambe */
+  object-fit: cover;     /* ritaglia senza deformare (mantiene proporzioni) */
+  border-radius: 8px;
+}
+
+/* mobile: impila le immagini e riduci altezza */
+@media (max-width: 768px) {
+  .img-row {
+    flex-direction: column;
+  }
+  .img-row img {
+    height: 220px;
+  }
+}
+</style>
+
+<div class="img-row">
+  <div class="col">
+    <img src="/assets/img/drone_alone.jpg" alt="Drone view">
+  </div>
+  <div class="col">
+    <img src="/assets/img/georecognition.png" alt="Georecognition map">
   </div>
 </div>
 
+
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    In blue is the path followed by the drone during mapping, in yellow the photos marking the mapped areas, and in red the points where waste was detected.
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The name Pietro San comes first from the Italian saying “Pietro torna indietro” -> “Peter comes back”, a wish we take quite literally, since we definitely want our drone to always return home. It’s also a family name with a story: in Carlo's family, the name, Pietro and Carlo have alternated for generations, so naming the drone Pietro felt almost like welcoming a son. And of course it nods to Saint Peter, once a fisherman, though instead of fish we plan to catch plastic.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+In the future, Pietro San will team up with a ground robot that can use its maps to plan routes and clean up harder-to-reach areas, all fully automated.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
