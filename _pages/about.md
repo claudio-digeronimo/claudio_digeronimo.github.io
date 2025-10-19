@@ -26,23 +26,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<div class="about-header">
-  <div class="about-content">
-    <h1>About Our Team</h1>
+
+<section class="about-section">
+  <div class="about-text">
+    <p>
+      Our group was founded in the Florence area, in small towns where quiet evenings sparked the wish to build something together.
+      What began as a mix of curiosity, boredom, and a shared drive to create has turned into a space for ideas, experiments, and teamwork.
+    </p>
+
+    <p>
+      We started with a project on waste management, believing it can bring real value to the community, but we’re always open to new directions.
+    </p>
+
+    <p>
+      If you’d like to collaborate, support us, or just learn more, feel free to get in touch with us (emails in people section).
+    </p>
   </div>
-</div>
-
-<div class="section-colored">
-  <p>
-    Our group was founded in the Florence area, in small towns where quiet evenings sparked the wish to build something together.
-    What began as a mix of curiosity, boredom, and a shared drive to create has turned into a space for ideas, experiments, and teamwork.
-  </p>
-
-  <p>
-    We started with a project on waste management, believing it can bring real value to the community, but we’re always open to new directions.
-  </p>
-
-  <p>
-    If you’d like to collaborate, support us, or just learn more, feel free to get in touch with us (emails in people section).
-  </p>
-</div>
+</section>

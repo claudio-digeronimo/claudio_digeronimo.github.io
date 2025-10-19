@@ -1,0 +1,11 @@
+<div class="{% if page.title == 'about' %}hero-strip-only-about-page{% else %}hero-strip{% endif %}">
+  {% if page.hero_image %}
+    <img src="{{ page.hero_image | relative_url }}" 
+         alt="{{ page.hero_alt | default: 'Banner image' }}" 
+         class="hero-image">
+  {% else %}
+    <img src="{{ '/assets/img/banner.jpg' | relative_url }}" 
+         alt="banner menù" 
+         class="hero-image">
+  {% endif %}
+</div>
