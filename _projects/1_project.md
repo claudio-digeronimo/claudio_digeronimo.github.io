@@ -4,7 +4,6 @@ title: project 1
 description: Pietro San
 img: assets/img/progetto_1_presentazione.png
 importance: 1
-category: work
 related_publications: false
 ---
 

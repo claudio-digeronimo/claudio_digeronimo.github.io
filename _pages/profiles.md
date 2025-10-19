@@ -11,21 +11,21 @@ profiles:
   # and create one content file for each profile inside _pages/
   - align: right
     image: claudio_profile_picture.jpg
-    content: about_claudio.md
+    content: profiles_claudio.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>digeronimoclaudio1@gmail.com</p>
       <p>Figline Valdarno (Florence), Italy</p>
   - align: left
     image: carlo_profile_picture.jpeg
-    content: about_carlo.md
+    content: profiles_carlo.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>dyronimo@hotmail.it</p>
       <p>Figline Valdarno (Florence), Italy</p>
   - align: right
     image: prof_pic.jpg
-    content: about_claudio.md
+    content: profiles_claudio.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <p>555 your office number</p>
