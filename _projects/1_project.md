@@ -7,7 +7,7 @@ importance: 1
 related_publications: false
 ---
 
-Pietro San is a project that uses consumer-grade drones — legally operable by anyone — to survey urban areas and map the distribution of litter in cities. Its goal is to raise awareness about the growing issue of waste and plastic, which have become part of our daily environment, while also addressing the problem through a quantitative and technologically driven approach. By leveraging automation, the project aims to provide regular, zero-impact data accessible to all citizens, enabling authorities to take targeted action where waste accumulation occurs most rapidly.
+Pietro San is a project that uses small DJI drones, legally operable by anyone, to survey urban areas and map the distribution of litter in cities. Its goal is to raise awareness about the growing issue of waste and plastic, which have become part of our daily environment, while also addressing the problem through a quantitative and technologically driven approach. By leveraging automation, the project aims to provide regular, zero-impact data accessible to all citizens, enabling authorities to take targeted action where waste accumulation occurs most rapidly.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
@@ -93,5 +93,4 @@ The detected waste is highlighted in green by the AI once the image has been pro
 
 The name Pietro San comes first from the Italian saying “Pietro torna indietro” -> “Peter comes back”, a wish we take quite literally, since we definitely want our drone to always return home. It’s also a family name with a story: in Carlo's family, the name, Pietro and Carlo have alternated for generations, so naming the drone Pietro felt almost like welcoming a son. And of course it nods to Saint Peter, once a fisherman, though instead of fish we plan to catch plastic.
 
-In the future, Pietro San will team up with a ground robot that can use its maps to plan routes and clean up harder-to-reach areas, all fully automated.
-
+In the future, Pietro San will team up with a ground robot that uses its maps to plan routes and clean up autonomously.

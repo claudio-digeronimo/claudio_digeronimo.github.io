@@ -1,4 +1,4 @@
-<div class="{% if page.title == 'about' %}hero-strip-only-about-page{% else %}hero-strip{% endif %}">
+<div class="hero-strip">
   {% if page.hero_image %}
     <img src="{{ page.hero_image | relative_url }}" 
          alt="{{ page.hero_alt | default: 'Banner image' }}" 

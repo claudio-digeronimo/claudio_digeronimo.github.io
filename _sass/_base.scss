@@ -229,14 +229,20 @@ ul.task-list input[type="checkbox"] {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  font-size: 1rem;                /* leggermente più grande per leggibilità */
+  color:#7a8b50;                 /* verde più chiaro, coordinato al titolo */
+  font-weight: 400;               /* regolare, per contrastare il 700 del titolo */
+  letter-spacing: 0.02em;         /* un po' più arioso */
+  text-align: left;               /* coerente con il titolo */
 
   a {
     color: inherit;
+    font-weight: 500;             /* leggermente enfatizzato nei link */
+    text-decoration: none;
 
     &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
+      color: #7a8b50;             /* riprende il verde oliva del titolo */
+      text-decoration: underline; /* evidenziazione elegante al passaggio */
     }
   }
 }
@@ -483,6 +489,7 @@ footer.fixed-bottom {
     text-align: center;
   }
 
+
   a {
     color: var(--global-footer-link-color);
 
@@ -577,11 +584,39 @@ footer.sticky-bottom {
   }
 }
 
-.post-title {
-  mjx-container[jax="CHTML"][display="true"] {
-    display: unset;
-  }
+.post_title {
+  text-align: left;
+  color: #7a8b50;           /* verde oliva */
+  font-size: 2rem;          /* grande ma elegante */
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
+
+.title_first_page {
+  text-align: center;
+  color: #7a8b50;           /* verde oliva principale */
+  font-size: 3.6rem;        /* leggermente più grande */
+  font-weight: 750;         /* più deciso, ma non troppo pesante */
+  letter-spacing: 0.035em;  /* più spazioso, dà respiro */
+  margin-top: 4.5rem;       /* un po’ più distanziato dall’alto */
+  margin-bottom: 1rem;      /* ravvicinato al sottotitolo */
+  line-height: 1.1;         /* compatto ma leggibile */
+}
+
+.subtitle {
+  text-align: center;
+  color: #657046;           /* verde oliva più scuro e caldo */
+  font-size: 1.8rem;        /* più ampio ma proporzionato */
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  margin-top: 0.3rem;
+  margin-bottom: 3rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 
 .post-list {
   margin: 0;

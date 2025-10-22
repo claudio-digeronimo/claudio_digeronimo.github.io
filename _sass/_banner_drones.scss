@@ -1,0 +1,101 @@
+/******************************************************************************
+ * Hero Strip, then used for drones banner
+ ******************************************************************************/
+
+
+.hero-strip {
+  position: relative;
+  width: 100vw;           /* tutta la viewport */
+  left: 50%;              /* la sposta di metà pagina a destra */
+  margin-left: -50vw;     /* e la riporta indietro, centrando */
+  height: 40vh;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: rgba(0, 150, 255, 0.3);
+  border-top: 2px solid #6f7a3d;      /* verde oliva più caldo */
+  border-bottom: 2px solid #899855;   /* verde chiaro, più luminoso */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* leggero rilievo */
+}
+
+
+.hero-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translate(-85%, -23%) scale(1.7);
+  transform-origin: center;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+  opacity: 1; /* 0 = completamente trasparente, 1 = opaco */
+}
+
+/* Evita barre di scorrimento orizzontali */
+body {
+  overflow-x: hidden;
+}
+
+/* Overlay per uniformare e migliorare leggibilità */
+.hero-strip::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 240, 230, 0.35) 0%,   /* beige semi-trasparente in alto */
+    rgba(245, 240, 230, 0.45) 50%,  /* più denso al centro */
+    rgba(245, 240, 230, 0.55) 100%  /* ancora più uniforme in basso */
+  );
+  pointer-events: none; /* lascia cliccabili gli elementi sopra */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;          /* se serve: manda le immagini a capo su schermi piccoli */
+  gap: 8rem;                /* spazio fra le immagini */
+  text-align: center;
+  padding: 3rem 2rem;       /* spazio attorno al gruppo */
+}
+
+.hero-content img {
+  max-height: 220px;        /* aumenta la dimensione */
+  height: auto;
+  width: auto;
+  border-radius: 12px;      /* arrotonda un po’ di più */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25); /* aggiunge profondità */
+  transition: transform 0.3s ease;
+}
+
+.hero-content img:hover {
+  transform: scale(1.05);   /* leggero ingrandimento al passaggio del mouse */
+}
+
+
+.hero-caption {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.7),   /* ombra profonda sotto */
+    0 -1px 2px rgba(255, 255, 255, 0.25); /* lieve luce sopra */
+  color: #2e2b25;              /* testo scuro, ma leggibile anche su beige */
+  font-family: "Segoe UI", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;           /* più grande */
+  font-weight: 700;            /* più spesso (700 = bold) */
+  letter-spacing: 0.03em;      /* leggero aumento dello spazio tra lettere */
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.6); /* contrasto su sfondo */
+  margin-top: 0rem;
+  margin-bottom: 1.2rem;
+}
