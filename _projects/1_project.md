@@ -13,7 +13,7 @@ Pietro San is a project that uses small DJI drones, legally operable by anyone, 
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid 
       loading="eager" 
-      path="assets/img/yolo_1.jpg" 
+      path="assets/img/yolo_1.JPG" 
       title="Drone view" 
       class="img-fluid rounded z-depth-1" 
     %}
@@ -22,7 +22,7 @@ Pietro San is a project that uses small DJI drones, legally operable by anyone, 
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid 
       loading="eager" 
-      path="assets/img/yolo_2.jpg" 
+      path="assets/img/yolo_2.JPG" 
       title="YOLO detection 1" 
       class="img-fluid rounded z-depth-1" 
     %}
@@ -31,7 +31,7 @@ Pietro San is a project that uses small DJI drones, legally operable by anyone, 
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid 
       loading="eager" 
-      path="assets/img/yolo_3.jpg" 
+      path="assets/img/yolo_3.JPG" 
       title="YOLO detection 3" 
       class="img-fluid rounded z-depth-1" 
     %}
