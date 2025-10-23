@@ -21,13 +21,13 @@ layout: default
     <!-- Banner -->
 
     <div class="hero-strip">
-    <img src="/assets/img/banner.JPG" alt="Banner" class="hero-image">
+    <img src="{{ '/assets/img/banner.JPG' | relative_url }}" alt="Banner" class="hero-image">
       <div class="hero-content">
-        <a href="http://127.0.0.1:4000/projects/1_project/" class="hero-link" target="_self">
-          <img src="/assets/img/pietro_san.png" alt="Project 1">
+      <a href="{{ '/projects/1_project/' | relative_url }}" class="hero-link" target="_self">
+        <img src="{{ '/assets/img/pietro_san.png' | relative_url }}" alt="Project 1">
         </a>
-        <a href="http://127.0.0.1:4000/projects/2_project/" class="hero-link" target="_self">
-          <img src="/assets/img/giovanni_kun.png" alt="Project 2">
+      <a href="{{ '/projects/2_project/' | relative_url }}" class="hero-link" target="_self">
+        <img src="{{ '/assets/img/giovanni_kun.png' | relative_url }}" alt="Project 2">
         </a>
       </div>
       <p class="hero-caption">

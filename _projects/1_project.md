@@ -79,10 +79,10 @@ The detected waste is highlighted in green by the AI once the image has been pro
 
 <div class="img-row">
   <div class="col">
-    <img src="/assets/img/drone_alone.jpg" alt="Drone view">
+    <img src="{{ '/assets/img/drone_alone.jpg' | relative_url }}" alt="Drone view">
   </div>
   <div class="col">
-    <img src="/assets/img/georecognition.png" alt="Georecognition map">
+    <img src="{{ '/assets/img/georecognition.png' | relative_url }}" alt="Georecognition map">
   </div>
 </div>
 
