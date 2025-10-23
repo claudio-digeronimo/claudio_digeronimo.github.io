@@ -99,3 +99,34 @@ body {
   margin-top: 0rem;
   margin-bottom: 1.2rem;
 }
+
+
+/* ----- VERSIONE MOBILE (max 768px) ----- */
+@media (max-width: 768px) {
+
+  .hero-strip {
+    height: auto;               /* lascia che il banner si adatti */
+  }
+
+  .hero-image {
+    transform: translate(-50%, -50%) scale(1.1); /* centra meglio e riduce zoom */
+  }
+
+  .hero-content {
+    flex-direction: row;        /* mantiene le immagini affiancate */
+    gap: 2rem;                  /* spazio minore fra le due */
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-content img {
+    max-height: 100px;          /* riduci le immagini */
+    width: auto;
+    height: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  .hero-caption {
+    font-size: 1rem;            /* testo più piccolo su mobile */
+    margin-bottom: 0.5rem;
+  }
+}
