@@ -72,7 +72,7 @@ The detected waste is highlighted in green by the AI once the image has been pro
     flex-direction: column;
   }
   .img-row img {
-    height: 220px;
+    height: 350px;
   }
 }
 </style>
